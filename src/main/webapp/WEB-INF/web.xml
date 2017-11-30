@@ -21,9 +21,10 @@
     </filter>
     <filter-mapping>
         <filter-name>TogglzFilter</filter-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/togglz/*</url-pattern>
     </filter-mapping>
 
+    <!--spring-mvc-->
     <servlet>
         <servlet-name>spring-web</servlet-name>
         <servlet-class>
@@ -35,11 +36,19 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>spring-web</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
+    <!--togglz-->
+    <servlet>
+        <servlet-name>TogglzConsoleServlet</servlet-name>
+        <servlet-class>org.togglz.console.TogglzConsoleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TogglzConsoleServlet</servlet-name>
+        <url-pattern>/togglz/*</url-pattern>
+    </servlet-mapping>
 
 </web-app>
