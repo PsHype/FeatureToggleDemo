@@ -8,16 +8,16 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:helloword-test-context.xml"})
+@ContextConfiguration(locations = {"classpath*:spring-test-context.xml"})
 public class SkillGroupControllerTest {
 
     @Autowired
-    private FeatureToggleController skillGroupController;
+    private FeatureToggleController featureToggleController;
 
     @Test
     public void should_return_200() throws Exception {
-        String result = skillGroupController.hi();
-        Assert.assertEquals("HelloOOCL", result);
+        String result = featureToggleController.hi();
+        Assert.assertEquals("hello featureToggle", result);
     }
     
 }

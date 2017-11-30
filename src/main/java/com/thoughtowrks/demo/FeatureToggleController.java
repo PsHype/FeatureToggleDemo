@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/OOCL")
+@RequestMapping(value = "/hi")
 public class FeatureToggleController {
 
     private final FeatureToggleService featureToggleService;
