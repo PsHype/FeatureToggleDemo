@@ -1,7 +1,7 @@
-package com.oocl.ir4.dsh.feature_toggle.property_config;
+package com.thoughtowrks.demo.feature_toggle.property_config;
 
 import com.google.common.io.Resources;
-import com.oocl.ir4.dsh.feature_toggle.Features;
+import com.thoughtowrks.demo.feature_toggle.Features;
 import org.springframework.context.annotation.Configuration;
 import org.togglz.core.Feature;
 import org.togglz.core.manager.TogglzConfig;

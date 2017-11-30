@@ -1,4 +1,4 @@
-package com.oocl.ir4.dsh;
+package com.thoughtowrks.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

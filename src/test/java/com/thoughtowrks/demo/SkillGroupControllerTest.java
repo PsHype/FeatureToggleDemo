@@ -1,4 +1,4 @@
-package com.oocl.ir4.dsh;
+package com.thoughtowrks.demo;
 
 import org.junit.Assert;
 import org.junit.Test;

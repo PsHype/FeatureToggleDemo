@@ -1,4 +1,4 @@
-package com.oocl.ir4.dsh.feature_toggle.property_config;
+package com.thoughtowrks.demo.feature_toggle.property_config;
 
 import com.google.common.io.Resources;
 import org.junit.Test;

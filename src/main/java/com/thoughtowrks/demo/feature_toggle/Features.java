@@ -1,4 +1,4 @@
-package com.oocl.ir4.dsh.feature_toggle;
+package com.thoughtowrks.demo.feature_toggle;
 
 import org.togglz.core.Feature;
 import org.togglz.core.annotation.Label;

@@ -1,6 +1,6 @@
-package com.oocl.ir4.dsh;
+package com.thoughtowrks.demo;
 
-import com.oocl.ir4.dsh.feature_toggle.Features;
+import com.thoughtowrks.demo.feature_toggle.Features;
 import org.springframework.stereotype.Service;
 
 @Service
