@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
 
-    <display-name>Spring3 MVC Application</display-name>
+    <display-name>Feature Toggle</display-name>
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath*:spring-context.xml</param-value>
