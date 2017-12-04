@@ -1,4 +1,4 @@
-package com.thoughtowrks.feature_toggle_demo.config;
+package com.thoughtowrks.feature_toggle_demo.features;
 
 import org.togglz.core.Feature;
 import org.togglz.core.annotation.Label;

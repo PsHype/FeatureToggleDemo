@@ -1,6 +1,6 @@
-package com.thoughtowrks.feature_toggle_demo.use_for_configuration;
+package com.thoughtowrks.feature_toggle_demo.application.use_for_configuration;
 
-import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
+import com.thoughtowrks.feature_toggle_demo.features.DemoFeatures;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.togglz.spring.proxy.FeatureProxyFactoryBean;

@@ -1,6 +1,6 @@
-package com.thoughtowrks.feature_toggle_demo.config.memory_config;
+package com.thoughtowrks.feature_toggle_demo.features.state_repository;
 
-import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
+import com.thoughtowrks.feature_toggle_demo.features.DemoFeatures;
 import org.springframework.context.annotation.Configuration;
 import org.togglz.core.Feature;
 import org.togglz.core.manager.TogglzConfig;
