@@ -1,7 +1,7 @@
-package com.thoughtowrks.demo;
+package com.thoughtowrks.feature_toggle_demo;
 
-import com.thoughtowrks.demo.use_for_config.WordInterface;
-import com.thoughtowrks.demo.use_for_hard_code.HelloToggleService;
+import com.thoughtowrks.feature_toggle_demo.use_for_config.WordInterface;
+import com.thoughtowrks.feature_toggle_demo.use_for_hard_code.HelloToggleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

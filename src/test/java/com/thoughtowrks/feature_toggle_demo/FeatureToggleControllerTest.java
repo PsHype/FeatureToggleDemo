@@ -1,6 +1,6 @@
-package com.thoughtowrks.demo;
+package com.thoughtowrks.feature_toggle_demo;
 
-import com.thoughtowrks.demo.feature_toggle.DemoFeatures;
+import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

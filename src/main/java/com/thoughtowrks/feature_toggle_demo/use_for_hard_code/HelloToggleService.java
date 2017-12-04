@@ -1,6 +1,6 @@
-package com.thoughtowrks.demo.use_for_hard_code;
+package com.thoughtowrks.feature_toggle_demo.use_for_hard_code;
 
-import com.thoughtowrks.demo.feature_toggle.DemoFeatures;
+import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
 import org.springframework.stereotype.Service;
 
 @Service
