@@ -7,7 +7,10 @@ import org.togglz.core.context.FeatureContext;
 public enum DemoFeatures implements Feature {
 
     @Label("should return hello ")
-    SAY_HEllO;
+    SAY_HEllO,
+
+    @Label("should return word ")
+    SAY_WORD;
 
     public boolean isActive() {
         return FeatureContext.getFeatureManager().isActive(this);

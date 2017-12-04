@@ -22,16 +22,26 @@ public class FeatureToggleControllerTest {
 
 
     @Test
-    public void should_return_hello_when_toggle_on() throws Exception {
+    public void should_say_hello_when_toggle_on() throws Exception {
         togglzRule.enable(DemoFeatures.SAY_HEllO);
-        Assert.assertEquals("hello", featureToggleController.hi());
+        Assert.assertEquals("hello", featureToggleController.hello());
     }
 
     @Test
-    public void should_not_return_hello_when_toggle_off() throws Exception {
+    public void should_say_bad_boy_hello_when_toggle_off() throws Exception {
         togglzRule.disable(DemoFeatures.SAY_HEllO);
-        Assert.assertEquals("hello feature toggle", featureToggleController.hi());
+        Assert.assertEquals("bad boy", featureToggleController.hello());
     }
 
+    @Test
+    public void should_say_word_when_toggle_on() {
+        togglzRule.enable(DemoFeatures.SAY_WORD);
+        Assert.assertEquals("word", featureToggleController.word());
+    }
 
+    @Test
+    public void should_say_bad_girl_when_toggle_off() {
+        togglzRule.disable(DemoFeatures.SAY_WORD);
+        Assert.assertEquals("bad girl", featureToggleController.word());
+    }
 }

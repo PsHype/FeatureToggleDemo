@@ -1,5 +1,7 @@
 package com.thoughtowrks.demo;
 
+import com.thoughtowrks.demo.use_for_config.WordInterface;
+import com.thoughtowrks.demo.use_for_hard_code.HelloToggleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,21 +9,29 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(value = "/hi")
 public class FeatureToggleController {
 
-    private final FeatureToggleService featureToggleService;
+    private final HelloToggleService helloToggleService;
+
+    private final WordInterface wordService;
 
     @Autowired
-    public FeatureToggleController(FeatureToggleService featureToggleService) {
-        this.featureToggleService = featureToggleService;
+    public FeatureToggleController(HelloToggleService helloToggleService, WordInterface wordService) {
+        this.helloToggleService = helloToggleService;
+        this.wordService = wordService;
     }
 
 
     @ResponseBody
-    @RequestMapping(method = RequestMethod.GET)
-    public String hi() {
-        return featureToggleService.someResult();
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String hello() {
+        return helloToggleService.someResult();
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/word", method = RequestMethod.GET)
+    public String word() {
+        return wordService.someResult();
     }
 
 }
