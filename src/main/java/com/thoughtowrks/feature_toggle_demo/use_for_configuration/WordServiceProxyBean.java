@@ -1,4 +1,4 @@
-package com.thoughtowrks.feature_toggle_demo.use_for_config;
+package com.thoughtowrks.feature_toggle_demo.use_for_configuration;
 
 import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
 import org.springframework.context.annotation.Bean;
