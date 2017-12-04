@@ -10,7 +10,15 @@ public enum DemoFeatures implements Feature {
     SAY_HEllO,
 
     @Label("should return word ")
-    SAY_WORD;
+    SAY_WORD,
+
+    @Label("test foreach loop")
+    @Performance
+    FOR_EACH,
+
+    @Label("test stream loop")
+    @Performance
+    STREAM;
 
     public boolean isActive() {
         return FeatureContext.getFeatureManager().isActive(this);
