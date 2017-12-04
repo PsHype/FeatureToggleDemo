@@ -1,6 +1,6 @@
 package com.thoughtowrks.feature_toggle_demo;
 
-import com.thoughtowrks.feature_toggle_demo.use_for_config.WordInterface;
+import com.thoughtowrks.feature_toggle_demo.use_for_config.WordService;
 import com.thoughtowrks.feature_toggle_demo.use_for_hard_code.HelloToggleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,10 +13,10 @@ public class FeatureToggleController {
 
     private final HelloToggleService helloToggleService;
 
-    private final WordInterface wordService;
+    private final WordService wordService;
 
     @Autowired
-    public FeatureToggleController(HelloToggleService helloToggleService, WordInterface wordService) {
+    public FeatureToggleController(HelloToggleService helloToggleService, WordService wordService) {
         this.helloToggleService = helloToggleService;
         this.wordService = wordService;
     }
