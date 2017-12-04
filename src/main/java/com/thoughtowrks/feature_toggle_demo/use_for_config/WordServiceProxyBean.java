@@ -2,11 +2,11 @@ package com.thoughtowrks.feature_toggle_demo.use_for_config;
 
 import com.thoughtowrks.feature_toggle_demo.config.DemoFeatures;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.togglz.spring.proxy.FeatureProxyFactoryBean;
 
-@Configuration
-public class WordServiceConfig {
+@Component
+public class WordServiceProxyBean {
 
     @Bean(name = "wordService")
     public FeatureProxyFactoryBean get() {
