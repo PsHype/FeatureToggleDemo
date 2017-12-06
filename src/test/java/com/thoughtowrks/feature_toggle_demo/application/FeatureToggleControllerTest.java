@@ -1,4 +1,4 @@
-package com.thoughtowrks.feature_toggle_demo;
+package com.thoughtowrks.feature_toggle_demo.application;
 
 import com.thoughtowrks.feature_toggle_demo.application.FeatureToggleController;
 import com.thoughtowrks.feature_toggle_demo.features.DemoFeatures;
